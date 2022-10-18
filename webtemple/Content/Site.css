@@ -2,6 +2,7 @@
     #services-section .minheigh {
         min-height: 220px;
     }
+
     .boxs {
         height: 160px;
         margin-top: 30px;
@@ -11,45 +12,50 @@
         font-size: medium;
     }
 }
-@media only screen and (min-width:1024px){
+
+@media only screen and (min-width:1024px) {
     .boxs {
         height: 250px;
-        
     }
 }
 
 @media only screen and (min-width:1440px) {
-        .boxs {
-            height: 350px;
-        }
-
-        .bg_color-s::after {
-            height: 515px;
-        }
+    .boxs {
+        height: 350px;
     }
-    /* common class - START */
-    .bottom-hr-s {
+
+    .bg_color-s::after {
+        height: 515px;
+    }
+}
+/* common class - START */
+.bottom-hr-s {
     background-color: #008374;
-    margin:auto;
-    width:5%;
-    height:3px;
-    
+    margin: auto;
+    width: 5%;
+    height: 3px;
 }
-.imgs-s{
-    border-radius:15px;
+
+.imgs-s {
+    border-radius: 15px;
 }
+
 .imgs-top-radius {
     border-radius: 15px 15px 0px 0px;
 }
+
 .ex-color {
     color: #f85a40;
 }
+
 .ex-color1 {
     background-color: #1a9082;
 }
+
 .ex-color-texts {
     color: rgb(255 255 255 / 0.50)
 }
+
 .ex-border-colors {
     border-color: rgb(255 255 255 / 0.30) !important;
 }
@@ -66,20 +72,21 @@
 .top-nav {
     background-color: #00796b;
 }
-.top-nav li{
-    
-    list-style:none;
-    color:white;
-    padding-right:25px;
-}
-.top-nav ul{
-    padding-left:0px;
-}
+
+    .top-nav li {
+        list-style: none;
+        color: white;
+        padding-right: 25px;
+    }
+
+    .top-nav ul {
+        padding-left: 0px;
+    }
 /* top Nav - END */
 /* about-us - START */
-.about-us li{
-    
+.about-us li {
 }
+
 .about-us ul {
     list-style: none;
     margin-left: 0;
@@ -91,33 +98,34 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 /* services - START */
-.services-css{
-    background-color:#f6f6f6;
-}
-.services-css h4 {
-    text-decoration: underline;
-    text-underline-position: under;
-    text-decoration-color: rgb(128 128 128 / 0.20);
-    text-underline-offset:5px;
-    text-decoration-thickness:4px;
-}
-.services-css span {
-    background-color: darkgray;
-    padding: 10px;
-    background-position-x:right;
+.services-css {
+    background-color: #f6f6f6;
 }
 
-.services-css a {
-    color: #008374;
-    text-decoration: none;
-}
+    .services-css h4 {
+        text-decoration: underline;
+        text-underline-position: under;
+        text-decoration-color: rgb(128 128 128 / 0.20);
+        text-underline-offset: 5px;
+        text-decoration-thickness: 4px;
+    }
+
+    .services-css span {
+        background-color: darkgray;
+        padding: 10px;
+        background-position-x: right;
+    }
+
+    .services-css a {
+        color: #008374;
+        text-decoration: none;
+    }
 /* services - END */
 /*pricings-START*/
-#pricing-section .top-padding{
-    padding-top:20px;
+#pricing-section .top-padding {
+    padding-top: 20px;
 }
 /*pricings-END*/
 /* ourteam - START */
@@ -125,15 +133,15 @@
     padding: 15px 15px 0px 15px;
     border-radius: 30px 30px 0px 0px;
 }
-.pricings li{
+
+.pricings li {
     list-style: none;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 /* ourteam - END */
 /* blog - START */
-#blog-section .paddingt{
-    padding-top:20px;
-
+#blog-section .paddingt {
+    padding-top: 20px;
 }
 /* blog - END */
 /* footer - START */
@@ -141,11 +149,10 @@
     list-style: none;
     padding-top: 10px;
 }
-.footer-section li a:link{
-    text-decoration:none;
-    
-    
-}
+
+    .footer-section li a:link {
+        text-decoration: none;
+    }
 /* footer - END */
 
 
@@ -155,14 +162,102 @@
     width: 100%;
     height: 620px;
     background-color: #008374 !important;
-    top:0px;
-    z-index:-1;
+    top: 0px;
+    z-index: -1;
 }
 
-@media screen and (max-width:985px){
+@media screen and (max-width:985px) {
     .bg_color-s::after {
         height: 515px;
-
     }
 }
 
+#protfoli-section a.nav-link.active {
+    background-color: #008374 !important;
+    color: white !important;
+    border-radius: 5px;
+}
+
+#protfoli-section a:hover {
+    cursor: pointer;
+}
+
+#protfoli-section a.nav-link {
+    color: #008374;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 80px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .prev a,
+    .next a {
+        text-decoration: none !important;
+    }
+#contactusfoam textarea:focus, input:focus{
+    border-color:#008374 !important;
+    box-shadow:#008374 !important;
+}
